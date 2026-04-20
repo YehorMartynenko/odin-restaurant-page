@@ -1,0 +1,102 @@
+:root {
+    --light-green: #98FB98;
+    --dark-green: #8FBC8B;
+    --text-color: #555;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: var(--light-green);
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 0.5rem 0 0.5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    background-color: var(--dark-green);
+    padding: 0.5rem;
+}
+
+.buttons {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.buttons > button {
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttons > button:hover {
+    color: var(--dark-green);
+    background-color: white;
+    border: 1px solid var(--dark-green);
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color)
+}
+.main-container > h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5rem 0 0 0;
+    text-decoration: var(--light-green) underline 4px;
+    text-underline-offset: 8px;
+}
+
+
+.under-dishes {
+    width: max-content;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 1rem 0 1rem;
+    font-size: 1rem;
+}
+.dishes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+.dishes > img {
+    width: 250px;
+    height: 250px;
+}
+
